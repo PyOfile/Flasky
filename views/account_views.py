@@ -9,7 +9,7 @@ blueprint = flask.Blueprint('account', __name__, template_folder='templates')
 
 
 @blueprint.route('/Account')
-@response(template_file='pays/account.html')
+@response(template_file='pay/account.html')
 def ac():
     return {}
 
