@@ -1,6 +1,6 @@
 File script:
 
-only need to build if you dont download it like this.
+only need to build if you dont download it git style. 
 
 Venv script:
 
