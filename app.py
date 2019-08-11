@@ -1,6 +1,6 @@
 import flask
 import os
-#import db_session as db_session
+import db_session as db_session
 
 
 app = flask.Flask(__name__)
@@ -24,7 +24,7 @@ def setup_db():
         'db',
         'drop.sqlite')
 
-#db_session.glob_init(db_file)
+    db_session.glob_init(db_file)
 
 
 def register_blueprints_a():
