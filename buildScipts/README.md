@@ -1,3 +1,16 @@
+To make bash file executable:
+
+chmod u+x /dir/to/file 
+
+TO run script:
+
+/dir/to/file
+
+or
+
+sh /dir/to/file
+
+
 File script:
 
 only need to build if you dont download it git style. 
