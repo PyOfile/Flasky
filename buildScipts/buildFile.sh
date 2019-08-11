@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# builds a file system and blank docs
+# builds a file system
 
-sudo mkdir templates static views viewmodels data && sudo mkdir templates/index templates/about templates/pay templates/form templates/arch && sudo mkdir static/css static/js static/img && sudo touch app.py vi_mod.py req.txt
+sudo mkdir templates static views db && sudo mkdir templates/index templates/about templates/pay templates/form templates/arch templates/cms && sudo mkdir static/css static/js static/img
