@@ -6,7 +6,7 @@ import db_session as db_session
 app = flask.Flask(__name__)
 
 """
-This is the revised app as of july 30, 2019. the change is an effort to professionalize the site.
+This is the revised app as of August 10, 2019. the change is an effort to professionalize the site.
 """
 
 def main():
