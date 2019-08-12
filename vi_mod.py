@@ -5,7 +5,6 @@ import flask
 
 def response(*, mimetype: str = None, template_file: str = None):
     def response_inner(f):
-        # print("Wrapping in response {}".format(f.__name__), flush=True)
 
         @wraps(f)
         def view_method(*args, **kwargs):
