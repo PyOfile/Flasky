@@ -1,6 +1,6 @@
 import sqlalchemy.ext.declarative as dec
 """
-so small but its for scale 
+This file is small for now but allows for scale later 
 """
 
 SqlAlchemyBase = dec.declarative_base()
