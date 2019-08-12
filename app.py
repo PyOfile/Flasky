@@ -9,7 +9,7 @@ sys.path.insert(0, folder)
 app = flask.Flask(__name__)
 
 """
-This is the revised app as of August 10, 2019. the change is an effort to professionalize the site.
+This is the revised app as of August 11, 2019. The change is an effort to organize the code in a professionalize way.
 """
 
 def main():
