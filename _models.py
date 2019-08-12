@@ -3,7 +3,7 @@
 # we need to preload the models and ensure they
 # are all loaded.
 """
-This is also a baby python file that is ment for scaling.
+This is a small file for now that will scale as more models are created.
 """
 # noinspection PyUnresolvedReferences
 
