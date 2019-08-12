@@ -3,7 +3,7 @@ import sqlalchemy.orm as orm
 from mod import SqlAlchemyBase
 
 """
-This is where the db majic happens. totally learning this. 
+This is where the db magic happens. This is where the sqlalchemy engine is born. 
 """
 
 factory = None
