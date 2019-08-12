@@ -2,7 +2,7 @@ import sqlalchemy as sa
 
 from mod import SqlAlchemyBase
 """
-First time sqlalchemy 08/09/19
+First time sqlalchemy 08/09/19, this is where we need to model the data from the dropform.html page. We need to make sure they match up right.
 """
 class Drop(SqlAlchemyBase):
     __tablename__ = "drop"
