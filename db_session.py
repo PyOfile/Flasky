@@ -20,6 +20,7 @@ def glob_init(db_file:str):
     engine = sa.create_engine(conn_str, echo=False)
     actory = orm.sessionmaker(bind=engine)
 
-    from dat import Drop
+    # noinspection PyUnresolvedReferences
+    import _models
     
     SqlAlchemyBase.metadata.create_all(engine)
