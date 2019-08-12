@@ -15,7 +15,8 @@ def glob_init(db_file:str):
         raise Exception("You must specify a db file!")
 
     conn_str = 'sqlite:///' + db_file.strip()
-    
+    print("Connecting to DB with {}".format(conn_str))
+
     engine = sa.create_engine(conn_str, echo=False)
     actory = orm.sessionmaker(bind=engine)
 
