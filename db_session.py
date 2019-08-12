@@ -2,6 +2,10 @@ import sqlalchemy as sa
 import sqlalchemy.orm as orm
 from mod import SqlAlchemyBase
 
+"""
+This is where the db majic happens. totally learning this. 
+"""
+
 factory = None
 
 def glob_init(db_file:str):

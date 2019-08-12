@@ -9,6 +9,10 @@ fake_db = {
     },
 }
 
+"""
+cms server that will direct traffic to 404 if we make sure to add them here.
+"""
+
 
 def get_page(url: str) -> dict:
     if not url:
