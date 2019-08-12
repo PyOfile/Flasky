@@ -1,7 +1,9 @@
 from functools import wraps
 
 import flask
-
+"""
+This file creates a view modifier that allows you to brake up your flask app.py into managable files
+"""
 
 def response(*, mimetype: str = None, template_file: str = None):
     def response_inner(f):
