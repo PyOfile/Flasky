@@ -1,5 +1,6 @@
 import sqlalchemy as sa
 import sqlalchemy.orm as orm
+import datetime 
 from mod import SqlAlchemyBase
 """
 First time sqlalchemy 08/09/19
