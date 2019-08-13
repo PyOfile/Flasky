@@ -9,14 +9,11 @@ sys.path.insert(0, folder)
 app = flask.Flask(__name__)
 
 """
-This is the revised app as of August 11, 2019. The change is an effort to organize the code in a professionalize way.
+This is the revised app as of August 10, 2019. the change is an effort to professionalize the site.
 """
 
 def main():
-    register_blueprints_a()
-    register_blueprints_b()
-    register_blueprints_c()
-    register_blueprints_d()
+    register_blueprints()
     setup_db()
     app.run('127.0.0.1', debug=True)
 
@@ -30,25 +27,16 @@ def setup_db():
     db_session.glob_init(db_file)
 
 
-def register_blueprints_a():
+def register_blueprints():
     from views import home_views
-    app.register_blueprint(home_views.blueprint)
-
-
-def register_blueprints_b():
     from views import drop_views
-    app.register_blueprint(drop_views.blueprint)
-
-
-def register_blueprints_c():
-    from views import account_views
-    app.register_blueprint(account_views.blueprint)
-
-
-def register_blueprints_d():
+    from views import account_views    
     from views import cms_views
+    
+    app.register_blueprint(home_views.blueprint)
+    app.register_blueprint(drop_views.blueprint)
+    app.register_blueprint(account_views.blueprint)
     app.register_blueprint(cms_views.blueprint)
-
 
 
 if __name__=='__main__':

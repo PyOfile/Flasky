@@ -3,7 +3,7 @@ import sqlalchemy.orm as orm
 from mod import SqlAlchemyBase
 
 """
-This is where the db magic happens. This is where the sqlalchemy engine is born. 
+This is where the db majic happens. totally learning this. 
 """
 
 factory = None
@@ -25,6 +25,6 @@ def glob_init(db_file:str):
     actory = orm.sessionmaker(bind=engine)
 
     # noinspection PyUnresolvedReferences
-    import _models
+    import __models
     
     SqlAlchemyBase.metadata.create_all(engine)
