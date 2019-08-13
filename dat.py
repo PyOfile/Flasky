@@ -3,7 +3,7 @@ import sqlalchemy.orm as orm
 import datetime 
 from mod import SqlAlchemyBase
 """
-First time sqlalchemy 08/09/19
+First time sqlalchemy 08/13/19
 """
 class Drop(SqlAlchemyBase):
     __tablename__ = "drop"
