@@ -10,6 +10,10 @@ or
 
 sh /dir/to/file
 
+or
+
+./file.sh (if in current working directory)
+
 
 File script:
 
