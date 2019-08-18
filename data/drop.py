@@ -1,5 +1,4 @@
 import sqlalchemy as sa
-import sqlalchemy.orm as orm
 import datetime
 from data.mod import SqlAlchemyBase
 """
@@ -17,8 +16,6 @@ class Drop(SqlAlchemyBase):
     last_login = sa.Column(sa.DateTime, default=datetime.datetime.now, index=True)
 
 
-    package_id = sa.Column(sa.String, sa.ForeignKey("drop.id"))
-    drop = orm.relation('drop')
 
 
 def __rep__(self):
