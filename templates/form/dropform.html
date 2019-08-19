@@ -1,15 +1,10 @@
-{% extends "_shares.html" %}
-<title>{% block title %}Drop Form{% endblock %}</title>
-{% block main %}
-
+{% extends "shared/_shares.html" %} {% block title %}Drop Form{% endblock %} {% block main %}
 <link rel="stylesheet" type="text/css" href="/static/css/indexA.css"></link>
 <br>
 <div class="box">
     <p>
         Please take some time to fill out your information. That way we can get a hold of you ASAP.
-
     </p>
-
     <form>
         <div class="form-group">
             <label for="InputEmail1">Email address:</label>
@@ -23,9 +18,8 @@
             <label for="InputFile1">Project File Drop:</label>
             <input type="file" class="form-control-file" id="FormControlFile1">
         </div>
-        <button type="submit" class="btn btn-default"><a class="nav-link">Drop</a></button>
+        <button type="submit" class="btn btn-sm">Drop</a></button>
     </form>
 </div>
 </div>
-
 {% endblock %}
