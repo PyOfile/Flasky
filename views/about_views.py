@@ -1,5 +1,5 @@
 import flask
-from vi_mod import response
+from vmod.vi_mod import response
 
 """
 This is the revised app as of july 29, 2019. the change is an effort to professionalize the site.
