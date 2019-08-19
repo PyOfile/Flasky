@@ -7,5 +7,5 @@ This is also a baby python file that is meant for scaling.
 """
 # noinspection PyUnresolvedReferences
 
-from data.drop import Drop
+from data.info import Info
 
