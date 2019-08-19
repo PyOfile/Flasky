@@ -22,7 +22,7 @@ def setup_db():
     db_file = os.path.join(
         os.path.dirname(__file__),
         'db',
-        'drop.sqlite')
+        'index.sqlite')
 
     db_session.glob_init(db_file)
 
