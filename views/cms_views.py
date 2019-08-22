@@ -1,6 +1,6 @@
 import flask
 from vmod.vi_mod import response
-import data.cms_serv as cms_service
+import services.cms_serv as cms_service
 
 """
 V 001
