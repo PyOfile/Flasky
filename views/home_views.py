@@ -1,5 +1,6 @@
 import flask
 from vmod.vi_mod import response
+import services.user_serv as user_service
 
 """
 This is the revised app as of july 29, 2019. the change is an effort to professionalize the site.
