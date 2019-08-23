@@ -12,7 +12,9 @@ blueprint = flask.Blueprint('home', __name__, template_folder='templates')
 @blueprint.route('/')
 @response(template_file='index/index.html')
 def ix():
-    return {}
+    return {
+        'user_count': user_service.get_user_count(),
+    }
 
 
 @blueprint.route('/login', methods=['GET'])

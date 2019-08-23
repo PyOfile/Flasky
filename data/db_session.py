@@ -1,18 +1,19 @@
 import sqlalchemy as sa 
 import sqlalchemy.orm as orm
+from sqlalchemy.orm import Session
 from data.mod import SqlAlchemyBase
 
 """
 This is where the db majic happens. totally learning this. 
 """
 
-factory = None
+__factory = None
 
 def glob_init(db_file:str):
-    global factory
+    global __factory
 
 
-    if factory:
+    if __factory:
         return
 
     if not db_file or not db_file.strip():
@@ -22,9 +23,14 @@ def glob_init(db_file:str):
     print("Connecting to DB with {}".format(conn_str))
 
     engine = sa.create_engine(conn_str, echo=False)
-    actory = orm.sessionmaker(bind=engine)
+    __factory = orm.sessionmaker(bind=engine)
 
     # noinspection PyUnresolvedReferences
     import data.__models
     
     SqlAlchemyBase.metadata.create_all(engine)
+
+
+def create_session() -> Session:
+    global __factory
+    return __factory()
