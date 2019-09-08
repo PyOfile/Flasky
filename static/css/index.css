@@ -1,8 +1,23 @@
-body {
-    height: 100%;
-    margin: 1%;
-    background: #1b1b1b;
-    font-family: "Lato", sans-serif;
+body,
+html {
+    background: none;
+    font-family: Arcon-Regular;
+    background-color: #1b1b1b;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: "Arcon-Regular";
+    src: url("../fonts/Arcon-Regular.WOFF") format('woff');
+}
+
+@font-face {
+    font-family: "Arcon-Rounded-Regular";
+    src: url("../fonts/Arcon-Rounded-Regular.WOFF") format('woff');
+    font-weight: bold;
 }
 
 .selector-for-some-widget {
@@ -11,19 +26,19 @@ body {
 
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 0%;
     position: fixed;
     z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
+    top: 0%;
+    left: 0%;
+    background-color: #110e0e;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 7%;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 25px;
+    padding: 8px 8px 8px 16px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -37,27 +52,20 @@ body {
 
 .sidenav .closebtn {
     position: absolute;
-    top: 3px;
-    left: 1px;
+    top: 0.5%;
+    left: 0%;
     font-size: 40px;
-    margin-left: 0;
+    padding-left: 5%;
+    padding-top: 0%;
 }
 
-#main {
-    background-image: url("../img/BG/dfheaderback.png");
-    background-size: cover;
-    border-radius: 8px;
-    color: #ffffff;
+#header {
+    margin-bottom: 4em;
+    background-color: #1b1b1b;
+    color: #ecebeb;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
     transition: margin-left .5s;
-    padding: 10px;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 3px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
+    padding-top: 0.5%;
+    padding-left: 1%;
+    padding-bottom: 1%;
 }
