@@ -1,0 +1,21 @@
+{% extends "shared/_shares.html" %} {% block title %}About{% endblock %} {% block main %}
+<link rel="stylesheet" type="text/css" href="/static/css/indexA.css"></link>
+<br>
+<div class="box">
+    <h2>Welcome</h2>
+    <br>
+    <p>
+
+</p>
+    <p>
+
+</p>
+    <p>
+
+</p>
+    <p>
+
+</p>
+</div>
+</div>
+{% endblock %}
