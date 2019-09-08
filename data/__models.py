@@ -7,4 +7,4 @@ This is also a baby python file that is meant for scaling.
 """
 # noinspection PyUnresolvedReferences
 
-from data.info import Info
+from directory/file import file
