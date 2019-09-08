@@ -9,6 +9,7 @@ class Info(SqlAlchemyBase):
     __tablename__ = "info"
     
     id = sa.Column(sa.Integer, primary_key=True, autoincrement=True)
+    # example entries
     name = sa.Column(sa.String, nullable=True)
     email = sa.Column(sa.String, index=True, unique=True, nullable=True)
     hashed_password = sa.Column(sa.String, nullable=True, index=True)
