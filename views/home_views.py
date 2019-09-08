@@ -17,6 +17,13 @@ def ix():
     }
 
 
+@blueprint.route('/About')
+@response(template_file='about/about.html')
+def ab():
+    return {}
+
+# git post examples for db
+
 @blueprint.route('/login', methods=['GET'])
 @response(template_file='/login.html')
 def log_get():
