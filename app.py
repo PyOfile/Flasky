@@ -29,11 +29,9 @@ def setup_db():
 
 def register_blueprints():
     from views import home_views
-    from views import about_views
     from views import cms_views
     
     app.register_blueprint(home_views.blueprint)
-    app.register_blueprint(about_views.blueprint)
     app.register_blueprint(cms_views.blueprint)
 
 
