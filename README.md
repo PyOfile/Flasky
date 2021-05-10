@@ -1,5 +1,3 @@
-# 001
-Version 001 9.8.2019
+#First Web Site
 
-
-This is some fun with flask. For the most part it is complete. Some files will need to be added for a real server build.
+This was my first time learning how to use Python in web development.
